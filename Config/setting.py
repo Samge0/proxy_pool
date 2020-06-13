@@ -33,10 +33,12 @@ HEADER = """
 
 PY3 = sys.version_info >= (3,)
 
-DB_TYPE = getenv('db_type', 'SSDB').upper()
+DB_TYPE = getenv('db_type', 'REDIS').upper()
+# DB_TYPE = getenv('db_type', 'SSDB').upper()
 DB_HOST = getenv('db_host', '127.0.0.1')
-DB_PORT = getenv('db_port', 8888)
-DB_PASSWORD = getenv('db_password', '')
+# DB_HOST = getenv('db_host', '192.168.1.101')
+DB_PORT = getenv('db_port', 6379)
+DB_PASSWORD = getenv('db_password', '1q12w2')
 
 
 """ 数据库配置 """
@@ -58,13 +60,19 @@ PROXY_GETTER = [
     "freeProxy03",
     "freeProxy04",
     "freeProxy05",
-    # "freeProxy06",
+    # "freeProxy06",# 码农代理， 不稳定
     "freeProxy07",
-    # "freeProxy08",
+    "freeProxy08",
     "freeProxy09",
+    # "freeProxy10",# 墙外网站 cn-proxy
+    # "freeProxy11",# proxy-list.org
+    # "freeProxy12",# list.proxylistplus.com
     "freeProxy13",
     "freeProxy14",
-    "freeProxy14",
+    "freeProxy15",
+    "freeProxy16",
+    "freeProxy17",
+    "freeProxy18",
 ]
 
 """ API config http://127.0.0.1:5010 """
